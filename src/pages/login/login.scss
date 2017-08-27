@@ -1,0 +1,80 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    &::after {
+      content: "";
+      background-image: url('../../assets/icon/back.jpg');
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 150%;
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        background-image: url('../../assets/icon/logo.png');
+        background-size: 100%;
+    }
+
+    &__form {
+        background: linear-gradient(to bottom right, rgba(255, 122, 8, 0.8), #ffbf00);
+        height: auto;
+        width: calc(85% - 50px);
+        margin-left: 7.5%;
+        position: absolute;
+        bottom: 20vh;
+        border-radius: 10px;
+        padding: 25px;
+
+        &__numbers {
+          width: 100%;
+          float: left;
+
+          &__input {
+            width: 50%;
+            float: left;
+
+            &__component {
+              width: 100% !important;
+              color: #ffffff !important;
+            }
+          }
+        }
+
+        &__toogle {
+
+          &__input {
+
+            &__component {
+              padding-top: 10px !important;
+            }
+          }
+        }
+
+        &__submit {
+          &__input {
+            &__component {
+              width: 100%;
+              height: 30px;
+              background-color: #fff;
+              border-radius: 50px;
+              border: none;
+              margin-top: 20px;
+              color: rgba(255, 122, 8, 1);
+            }
+          }
+        }
+    }
+}
