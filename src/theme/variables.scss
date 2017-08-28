@@ -40,6 +40,7 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222,
   orangeColor:       orange,
+  bgColor: #eee5df
 );
 
 
@@ -50,7 +51,7 @@ $toggle-ios-active-color: #F7E020;
 $label-ios-text-color: #fff;
 $label-ios-text-color-focused: #fff;
 $text-input-ios-show-focus-highlight: false;
-
+$card-ios-border-radius: 5px;
   
 
 
@@ -63,6 +64,7 @@ $toggle-md-active-color: #F7E020;
 $label-md-text-color: #fff;
 $label-md-text-color-focused: #fff;
 $text-input-md-show-focus-highlight: false;
+$card-md-border-radius: 10px;
 
 
 // App Windows Variables
