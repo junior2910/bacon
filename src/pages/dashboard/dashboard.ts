@@ -20,15 +20,15 @@ interface User {
 export class DashboardPage {
   public user:User;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  
+
     this.user = {
       Nome: "Gustavo"
     }
-  
+
   }
 
   ionViewDidLoad() {
-    
+
   }
 
 }
