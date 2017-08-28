@@ -11,12 +11,19 @@
 
                       <ion-item class="login__form__numbers__input">
                         <ion-label class="login__form__numbers__input__label" floating>Login</ion-label>
-                        <ion-input class="login__form__numbers__input__component"></ion-input>
+                        <ion-input
+                          [(ngModel)]="this.user.login"
+                          name="login"
+                          class="login__form__numbers__input__component"></ion-input>
                       </ion-item>
 
                       <ion-item class="login__form__numbers__input">
                         <ion-label class="login__form__numbers__input__label" floating>Senha</ion-label>
-                        <ion-input class="login__form__numbers__input__component"></ion-input>
+                        <ion-input
+                          [(ngModel)]="this.user.senha"
+                          name="password"
+                          type="password"
+                          class="login__form__numbers__input__component"></ion-input>
                       </ion-item>
                   </ion-list>
 
