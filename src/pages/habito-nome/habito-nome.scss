@@ -1,0 +1,45 @@
+.orange{
+    color: orange;
+}
+.nav{
+    background-image: none !important;
+    border: none !important;
+}
+.bgColor{
+    background-color: #eee5df;
+}
+.clean{
+    font-weight: 300;
+}
+.texto {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0px 10px;
+}
+
+.titulo {
+  font-size: 18px;
+  color: orange;
+  text-align: center;
+  font-weight: 300;
+}
+
+.inputNome {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px #ccc;
+  margin-top: 8vh;
+}
+
+.btn {
+  font-size: 20px !important;
+  font-weight: 300 !important;
+  margin-top: 20px;
+}

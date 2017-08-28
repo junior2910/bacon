@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { HabitoNomePage } from '../pages/habito-nome/habito-nome';
 import { Login } from '../pages/login/index';
 import {HistoricoPage} from '../pages/historico/historico';
 
@@ -14,7 +15,8 @@ import {HistoricoPage} from '../pages/historico/historico';
     MyApp,
     DashboardPage,
     Login,
-    HistoricoPage
+    HistoricoPage,
+    HabitoNomePage,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,9 @@ import {HistoricoPage} from '../pages/historico/historico';
     MyApp,
     DashboardPage,
     Login,
-    HistoricoPage
+    HistoricoPage,
+    HabitoNomePage,
+
   ],
   providers: [
     StatusBar,
