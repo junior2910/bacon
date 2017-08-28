@@ -6,6 +6,7 @@ import { LoadingController } from 'ionic-angular';
 
 
 import { DashboardPage } from '../dashboard/dashboard';
+import { HabitoNomePage } from '../habito-nome/habito-nome';
 
 interface User {
   login:string,
@@ -41,7 +42,8 @@ export class Login {
       });
 
       loader.onDidDismiss(() => {
-        this.navCtrl.setRoot(DashboardPage);
+        //this.navCtrl.setRoot(HabitoNomePage);
+        this.navCtrl.push(HabitoNomePage);
       });
 
       loader.present();

@@ -6,12 +6,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { HabitoNomePage } from '../pages/habito-nome/habito-nome';
 import { Login } from '../pages/login/index';
 
 @NgModule({
   declarations: [
     MyApp,
     DashboardPage,
+    HabitoNomePage,
     Login
   ],
   imports: [
@@ -22,6 +24,7 @@ import { Login } from '../pages/login/index';
   entryComponents: [
     MyApp,
     DashboardPage,
+    HabitoNomePage,
     Login
   ],
   providers: [
