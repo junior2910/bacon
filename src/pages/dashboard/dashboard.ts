@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import {HistoricoPage} from '../historico/historico';
+
 /**
  * Generated class for the DashboardPage page.
  *
@@ -20,15 +22,19 @@ interface User {
 export class DashboardPage {
   public user:User;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+  
     this.user = {
       Nome: "Gustavo"
     }
+  
+  }
 
+  goToHistorico(){
+    this.navCtrl.push(HistoricoPage);
   }
 
   ionViewDidLoad() {
-
+    
   }
 
 }

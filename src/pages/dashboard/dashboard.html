@@ -37,8 +37,7 @@
         </ion-row>
         <ion-row>
           <ion-col col-6>    
-            <ion-card>
-              
+            <ion-card (click)="goToHistorico()">
                 <ion-card-header class="clean">
                     <ion-img style="background: none" width="40" height="40" src="assets/historico.png"></ion-img><br>
                     ver <br>historico
@@ -48,7 +47,8 @@
                   <!-- Add card content here! -->
                 </ion-card-content>
               
-              </ion-card></ion-col>
+              </ion-card>
+            </ion-col>
           <ion-col col-6>    <ion-card>
               
               <ion-card-header class="clean">
