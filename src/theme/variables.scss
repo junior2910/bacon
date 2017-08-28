@@ -52,8 +52,10 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
+$toggle-md-active-color: #F7E020;
+$label-md-text-color: #fff;
+$label-md-text-color-focused: #fff;
+$text-input-md-show-focus-highlight: false;
 
 
 // App Windows Variables

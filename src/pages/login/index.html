@@ -7,22 +7,23 @@
 
               <form>
 
-                  <div class="login__form__numbers">
-                      <div class="login__form__numbers__input">
+                  <ion-list class="login__form__numbers">
 
+                      <ion-item class="login__form__numbers__input">
+                        <ion-label class="login__form__numbers__input__label" floating>Login</ion-label>
+                        <ion-input class="login__form__numbers__input__component"></ion-input>
+                      </ion-item>
 
-                      </div>
-
-                      <div class="login__form__numbers__input">
-
-
-
-                      </div>
-                  </div>
+                      <ion-item class="login__form__numbers__input">
+                        <ion-label class="login__form__numbers__input__label" floating>Senha</ion-label>
+                        <ion-input class="login__form__numbers__input__component"></ion-input>
+                      </ion-item>
+                  </ion-list>
 
                   <div class="login__form__toogle">
                       <div class="login__form__toogle__input">
-
+                          <ion-toggle (click)="presentToast()" class="login__form__toogle__input__component" checked="false"></ion-toggle>
+                          <span class="login__form__toogle__input__label">Lembrar login e senha</span>
                       </div>
                   </div>
 
