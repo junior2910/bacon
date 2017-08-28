@@ -6,7 +6,7 @@ import { LoadingController } from 'ionic-angular';
 
 
 import { DashboardPage } from '../dashboard/dashboard';
-import { HabitoNomePage } from '../habito-nome/habito-nome';
+
 
 interface User {
   login:string,
@@ -35,7 +35,7 @@ export class Login {
   }
 
   goToDashboard() {
-    if(this.user.login == 'test@gmail.com' && this.user.senha == '1234') {
+    if(this.user.login == '' && this.user.senha == '') {
       let loader = this.loadingCtrl.create({
         content: "Verificando...",
         duration: 1000

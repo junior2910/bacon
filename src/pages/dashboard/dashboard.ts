@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { HabitoNomePage } from '../habito-nome/habito-nome';
 import {HistoricoPage} from '../historico/historico';
 
 /**
@@ -31,6 +32,9 @@ export class DashboardPage {
 
   goToHistorico(){
     this.navCtrl.push(HistoricoPage);
+  }
+  goToHabito(){
+    this.navCtrl.push(HabitoNomePage);
   }
 
   ionViewDidLoad() {
