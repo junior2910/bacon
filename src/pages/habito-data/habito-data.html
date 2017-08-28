@@ -14,27 +14,36 @@
     <ion-grid>
       <ion-row>
         <ion-col col-12>
-            <p class="texto">Lorem Ipsum é simplesmente uma simulação de texto da
-              indústria tipográfica e de impressos, e vem sendo utilizado
-              desde o século XVI, quando um impressor desconhecido pegou
-              uma bandeja de tipos e os embaralhou</p>
+            <p class="texto">Alguns hábitos acontecem diariamente, outros em um respectivo dia da semana. Para que a mudança seja efetiva temos que enviar os avisos no momento certo.
+</p>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col col-12>
-            <h3 class="titulo">dias dias dias</h3>
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col col-12>
-            <input placeholder="Escolha um nome" type="text" class="inputNome" />
+            <h3 class="titulo">Quais dias da semana você tem o hábito de {{this.nomeHabito}}?</h3>
         </ion-col>
       </ion-row>
 
       <ion-row>
         <ion-col col-12>
-            <button ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
+          <ion-item>
+            <ion-label>Dias</ion-label>
+            <ion-select class="select" [(ngModel)]="this.dias" multiple="true" placeholder="Selecione o(s) dia(s)">
+              <ion-option>Segunda</ion-option>
+              <ion-option>Terça</ion-option>
+              <ion-option>Quarta</ion-option>
+              <ion-option>Quinta</ion-option>
+              <ion-option>Sexta</ion-option>
+              <ion-option>Sábado</ion-option>
+              <ion-option>Domingo</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-12>
+            <button (click)="goToHabitoValor()" ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
         </ion-col>
       </ion-row>
     </ion-grid>
