@@ -42,8 +42,7 @@ export class Login {
       });
 
       loader.onDidDismiss(() => {
-        //this.navCtrl.setRoot(HabitoNomePage);
-        this.navCtrl.push(HabitoNomePage);
+        this.navCtrl.setRoot(DashboardPage);
       });
 
       loader.present();
