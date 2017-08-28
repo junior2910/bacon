@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 
-import {Dashboard} from '../dashboard';
+import { DashboardPage } from '../dashboard/dashboard';
 
 @Component({
   selector: 'page-login',
@@ -15,7 +15,7 @@ export class Login {
   goToDashboard() {
     //push another page onto the history stack
     //causing the nav controller to animate the new page in
-    this.navCtrl.push(Dashboard);
+    this.navCtrl.setRoot(DashboardPage);
   }
 
   presentToast() {
