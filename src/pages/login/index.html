@@ -22,7 +22,13 @@
 
                   <div class="login__form__toogle">
                       <div class="login__form__toogle__input">
-                          <ion-toggle ng-check="presentToast()" class="login__form__toogle__input__component" checked="false"></ion-toggle>
+                          <ion-toggle
+                            [(ngModel)]="this.isRemember"
+                            name="remember"
+                            (ionChange)="presentToast();"
+                            class="login__form__toogle__input__component"
+                            checked="isRemember"></ion-toggle>
+
                           <span class="login__form__toogle__input__label">Lembrar login e senha</span>
                       </div>
                   </div>

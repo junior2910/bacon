@@ -9,8 +9,12 @@ import { DashboardPage } from '../dashboard/dashboard';
   templateUrl: 'index.html'
 })
 export class Login {
+  public isRemember: boolean;
+  constructor(public navCtrl: NavController, private toastCtrl: ToastController) {
 
-  constructor(public navCtrl: NavController, private toastCtrl: ToastController) {}
+    this.isRemember = false;
+    console.log(this.isRemember);
+  }
 
   goToDashboard() {
     //push another page onto the history stack
@@ -19,17 +23,19 @@ export class Login {
   }
 
   presentToast() {
-    let toast = this.toastCtrl.create({
-      message: 'Vamos lembrar de você',
-      duration: 3000,
-      position: 'bottom'
-    });
+    if(this.isRemember) {
+      let toast = this.toastCtrl.create({
+        message: 'Vamos lembrar de você',
+        duration: 1000,
+        position: 'bottom'
+      });
 
-    toast.onDidDismiss(() => {
-      console.log('Dismissed toast');
-    });
+      toast.onDidDismiss(() => {
+        console.log('Dismissed toast');
+      });
 
-    toast.present();
+      toast.present();
+    }
   }
 
 }
