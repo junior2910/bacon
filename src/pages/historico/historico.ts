@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {HabitoNomePage} from '../habito-nome/habito-nome';
 /**
  * Generated class for the HistoricoPage page.
  *
@@ -20,5 +20,7 @@ export class HistoricoPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HistoricoPage');
   }
-
+  goToAdd(){
+    this.navCtrl.push(HabitoNomePage);
+  }
 }

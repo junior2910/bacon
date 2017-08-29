@@ -10,10 +10,28 @@
         <ion-title >
           <span class="orange">historico de investimentos</span>
             </ion-title>
+            
       </ion-navbar>
+       <ion-item>Saldo em conta  <ion-note item-end>$ 530,90</ion-note> </ion-item>
     
     </ion-header>
 
-<ion-content padding>
-
+<ion-content >
+   
+  <ion-list  no-lines>
+      <ion-item>Investimento Diario<br><p>29/08/2017</p><ion-note item-end>$ 5,00</ion-note></ion-item>
+      <ion-item><div style="height:60px;border-left:2px solid #666666;"></div></ion-item>
+      <ion-item>Investimento Adicional<br><p>29/08/2017</p><ion-note item-end>$ 50,00</ion-note></ion-item>
+      <ion-item><div style="height:60px;border-left:2px solid #666666;"></div></ion-item>
+    <ion-item>Investimento Diario<br><p>29/08/2017</p><ion-note item-end>$ 5,00</ion-note></ion-item>
+    <ion-item><div style="height:60px;border-left:2px solid #666666;"></div></ion-item>
+    <ion-item>Investimento Adicional<br><p>29/08/2017</p><ion-note item-end>$ 50,00</ion-note></ion-item>
+    <ion-item><div style="height:60px;border-left:2px solid #666666;"></div></ion-item>
+    <ion-item>Bem vindo<br><p>29/08/2017</p><ion-note item-end>$ 0,00</ion-note></ion-item>
+    
+  </ion-list>
+  <ion-fab right bottom>
+      <button ion-fab color="orangeColor" (click)="goToAdd()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+  
 </ion-content>
