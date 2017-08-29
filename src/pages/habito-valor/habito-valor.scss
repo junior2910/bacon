@@ -1,7 +1,15 @@
-
-.inputNome .random{
+.random{
   width: 80%;
   text-align: right;
+  height: 50px;
+  background-color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 0px #ccc;
+  margin-top: 6vh;
 }
 
 .inpt{
@@ -12,4 +20,5 @@
 
 .texto{
   color: #777 !important;
+  text-align: center;
 }

@@ -6,7 +6,7 @@
 
     &::after {
       content: "";
-      background-image: url('../../assets/icon/back.jpg');
+      background-image: url('../assets/icon/back.jpg');
       top: 0;
       left: 0;
       bottom: 0;
@@ -24,7 +24,7 @@
         position: absolute;
         top: 40px;
         left: 40px;
-        background-image: url('../../assets/icon/logo.png');
+        background-image: url('../assets/icon/logo.png');
         background-size: 100%;
     }
 
