@@ -9,6 +9,8 @@ import { AlertController } from 'ionic-angular';
  * on Ionic pages and navigation.
  */
 
+ import { HabitoValorPage } from '../habito-valor/habito-valor';
+
 @Component({
   selector: 'page-habito-data',
   templateUrl: 'habito-data.html',
@@ -28,8 +30,8 @@ export class HabitoDataPage {
     if(this.dias) {
 
       localStorage.setItem("diasHabito", this.dias);
-      // this.navCtrl.push(HabitoDataPage);
-      console.log(localStorage.getItem("diasHabito"));
+      this.navCtrl.push(HabitoValorPage);
+      
     } else {
 
       let alert = this.alertCtrl.create({

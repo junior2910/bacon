@@ -10,6 +10,7 @@ import { HabitoNomePage } from '../pages/habito-nome/habito-nome';
 import { Login } from '../pages/login/index';
 import {HistoricoPage} from '../pages/historico/historico';
 import {HabitoDataPage} from '../pages/habito-data/habito-data';
+import {HabitoValorPage} from '../pages/habito-valor/habito-valor';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import {HabitoDataPage} from '../pages/habito-data/habito-data';
     HistoricoPage,
     HabitoNomePage,
     HabitoDataPage,
+    HabitoValorPage,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import {HabitoDataPage} from '../pages/habito-data/habito-data';
     HistoricoPage,
     HabitoNomePage,
     HabitoDataPage,
+    HabitoValorPage,
   ],
   providers: [
     StatusBar,

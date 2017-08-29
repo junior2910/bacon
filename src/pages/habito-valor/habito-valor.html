@@ -1,0 +1,37 @@
+<ion-header class="nav" start>
+
+  <ion-navbar >
+    <ion-title >
+      <span class="orange">Olá, Gustavo</span>
+        </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-col col-12>
+      <p class="texto">Só mais uma coisa... Nos diga quanto esse hábito lhe leva de dinheiro e vamos te ajudar a guardar para o seu futuro.
+      </p>
+  </ion-col>
+
+  <div class="titulo">
+    Quanto esse hábito<br/>lhe custa por dia?
+  </div>
+
+
+  <div class="inpt">
+    R$ <input
+        [(ngModel)]="this.valorHabito"
+        name="valor"
+        placeholder="0"
+        type="number"
+        class="inputNome random" />
+  </div>
+
+  <ion-col col-12>
+      <button (click)="goToSaveHabit()" ion-button block color="orangeColor" large class="btn">SALVAR</button>
+  </ion-col>
+
+</ion-content>
