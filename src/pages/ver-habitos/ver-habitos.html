@@ -1,13 +1,9 @@
-<!--
-  Generated template for the VerHabitosPage page.
+<ion-header class="nav" start>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>verHabitos</ion-title>
+  <ion-navbar >
+    <ion-title >
+      <span class="orange">Olá, User</span>
+        </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +11,42 @@
 
 <ion-content padding>
 
+    <ion-grid>
+      <ion-col col-12>
+          <ion-img style="background: none" class="iconFlux" src="assets/name.png"></ion-img>
+      </ion-col>
+
+      <ion-row>
+        <ion-col col-12>
+            <p class="texto">Hábito é uma forma usual de fazer, ser ou sentir. Alguns deles a gente gosta e outros não, mas nenhum deles é imutável. É só treinarmos o nosso cérebro para isso.
+</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+            <h3 class="titulo">Qual hábito você deseja mudar?</h3>
+        </ion-col>
+      </ion-row>
+
+      <form (ngSubmit)="goToHabitoData()">
+
+        <ion-row>
+          <ion-col col-12>
+              <input
+                [(ngModel)]="this.nomeHabito"
+                name="password"
+                placeholder="Ex: Beber café"
+                type="text"
+                class="inputNome" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-12>
+              <button type="submit" ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
+          </ion-col>
+        </ion-row>
+
+      </form>
+    </ion-grid>
 </ion-content>

@@ -24,18 +24,19 @@
     Quanto esse hábito<br/>lhe custa por dia?
   </div>
 
+  <form (ngSubmit)="goToSaveHabit()">
+    <div class="inpt">
+      R$ <input
+          [(ngModel)]="this.valorHabito"
+          name="valor"
+          placeholder="0"
+          type="number"
+          class="random" />
+    </div>
 
-  <div class="inpt">
-    R$ <input
-        [(ngModel)]="this.valorHabito"
-        name="valor"
-        placeholder="0"
-        type="number"
-        class="random" />
-  </div>
-
-  <ion-col col-12>
-      <button (click)="goToSaveHabit()" ion-button block color="orangeColor" large class="btn">SALVAR</button>
-  </ion-col>
+    <ion-col col-12>
+        <button type="submit" ion-button block color="orangeColor" large class="btn">SALVAR</button>
+    </ion-col>
+  </form>
 
 </ion-content>

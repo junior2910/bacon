@@ -3,6 +3,8 @@ import { NavController, NavParams } from 'ionic-angular';
 
 import { HabitoNomePage } from '../habito-nome/habito-nome';
 import {HistoricoPage} from '../historico/historico';
+import {VerHabitosPage} from '../ver-habitos/ver-habitos';
+
 
 /**
  * Generated class for the DashboardPage page.
@@ -23,11 +25,11 @@ interface User {
 export class DashboardPage {
   public user:User;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  
+
     this.user = {
       Nome: "Gustavo"
     }
-  
+
   }
 
   goToHistorico(){
@@ -36,9 +38,12 @@ export class DashboardPage {
   goToHabito(){
     this.navCtrl.push(HabitoNomePage);
   }
+  goToVerHabitos(){
+    this.navCtrl.push(VerHabitosPage);
+  }
 
   ionViewDidLoad() {
-    
+
   }
 
 }

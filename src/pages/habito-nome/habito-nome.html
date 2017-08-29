@@ -28,21 +28,25 @@
         </ion-col>
       </ion-row>
 
-      <ion-row>
-        <ion-col col-12>
-            <input
-              [(ngModel)]="this.nomeHabito"
-              name="password"
-              placeholder="Ex: Beber café"
-              type="text"
-              class="inputNome" />
-        </ion-col>
-      </ion-row>
+      <form (ngSubmit)="goToHabitoData()">
 
-      <ion-row>
-        <ion-col col-12>
-            <button (click)="goToHabitoData()" ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
-        </ion-col>
-      </ion-row>
+        <ion-row>
+          <ion-col col-12>
+              <input
+                [(ngModel)]="this.nomeHabito"
+                name="password"
+                placeholder="Ex: Beber café"
+                type="text"
+                class="inputNome" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-12>
+              <button type="submit" ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
+          </ion-col>
+        </ion-row>
+
+      </form>
     </ion-grid>
 </ion-content>
