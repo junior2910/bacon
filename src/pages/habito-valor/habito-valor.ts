@@ -35,7 +35,7 @@ export class HabitoValorPage {
 
       const habitos = [
         {
-          nome: localStorage.setItem("valorHabito", this.valorHabito.toString());
+          nome: localStorage.setItem("valorHabito", this.valorHabito.toString())
         }
       ];
 
