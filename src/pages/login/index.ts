@@ -35,7 +35,7 @@ export class Login {
   }
 
   goToDashboard() {
-    if(this.user.login == '' && this.user.senha == '') {
+    if(this.user.login == 'test' && this.user.senha == '124') {
       let loader = this.loadingCtrl.create({
         content: "Verificando...",
         duration: 1000

@@ -4,7 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { HabitoNomePage } from '../habito-nome/habito-nome';
 import {HistoricoPage} from '../historico/historico';
 import {VerHabitosPage} from '../ver-habitos/ver-habitos';
-
+import {Login} from '../login';
 
 /**
  * Generated class for the DashboardPage page.
@@ -40,6 +40,10 @@ export class DashboardPage {
   }
   goToVerHabitos(){
     this.navCtrl.push(VerHabitosPage);
+  }
+
+  logout() {
+    this.navCtrl.setRoot(Login);
   }
 
   ionViewDidLoad() {

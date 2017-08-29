@@ -12,24 +12,20 @@
             </ion-title>
 
       </ion-navbar>
-       <ion-item>Saldo em conta  <ion-note item-end>$ 103,00</ion-note> </ion-item>
+       <ion-item>Saldo em conta  <ion-note item-end>R$ {{ this.total }},00</ion-note> </ion-item>
 
     </ion-header>
 
 <ion-content >
 
   <ion-list  no-lines>
-      <ion-item>Mc Donalds<br><p>29/08/2017</p><ion-note item-end>$ 34,00</ion-note></ion-item>
-      <ion-item><div style="height:40px;border-left:2px solid #666666;"></div></ion-item>
-      <ion-item>Bjuteria<br><p>29/08/2017</p><ion-note item-end>$ 15,00</ion-note></ion-item>
-      <ion-item><div style="height:40px;border-left:2px solid #666666;"></div></ion-item>
-    <ion-item>Mc Donalds<br><p>29/08/2017</p><ion-note item-end>$ 34,00</ion-note></ion-item>
-    <ion-item><div style="height:40px;border-left:2px solid #666666;"></div></ion-item>
-    <ion-item>Cerveja<br><p>29/08/2017</p><ion-note item-end>$ 20,00</ion-note></ion-item>
-    <ion-item><div style="height:40px;border-left:2px solid #666666;"></div></ion-item>
-    <ion-item>Bem vindo<br><p>29/08/2017</p><ion-note item-end>$ 0,00</ion-note></ion-item>
-
+    <ion-item-group *ngFor="let row of this.historicos.reverse()">
+      <ion-item>{{row.nome}}<br><p>{{row.dia}}</p><ion-note item-end>R$ {{row.valor}},00</ion-note></ion-item>
+      <ion-item><div style="height:20px;border-left:2px solid #666666; margin-top: -10px;"></div></ion-item>
+    </ion-item-group>
+    <ion-item>Bem vindo<br><p></p><ion-note item-end>R$ 0,00</ion-note></ion-item>
   </ion-list>
+
   <ion-fab right bottom>
       <button ion-fab color="orangeColor" (click)="goToAdd()"><ion-icon name="add"></ion-icon></button>
   </ion-fab>

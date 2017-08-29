@@ -12,41 +12,40 @@
 <ion-content padding>
 
     <ion-grid>
-      <ion-col col-12>
-          <ion-img style="background: none" class="iconFlux" src="assets/name.png"></ion-img>
-      </ion-col>
 
       <ion-row>
         <ion-col col-12>
-            <p class="texto">Hábito é uma forma usual de fazer, ser ou sentir. Alguns deles a gente gosta e outros não, mas nenhum deles é imutável. É só treinarmos o nosso cérebro para isso.
-</p>
+            <h3 class="titulo">Hábitos cadastrados</h3>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col col-12>
-            <h3 class="titulo">Qual hábito você deseja mudar?</h3>
+            <h3 class="texto">Deslize um item para a esquerda e poupe o valor do hábito!</h3>
         </ion-col>
       </ion-row>
 
-      <form (ngSubmit)="goToHabitoData()">
+        <ion-list>
+          <ion-item-group>
+            <ion-item-sliding *ngFor="let habito of this.habitos">
+              <ion-item>
+                <h2 style="text-overflow: ellipsis">O que é: {{ habito.nome }}</h2>
+                <h3 style="color: #888; text-overflow: ellipsis">Dias: {{ habito.dias }}</h3>
+                <p style="color: green">Valor do hábito: R${{ habito.valor }},00</p>
+              </ion-item>
+              <ion-item-options side="right">
+                <button ion-button color="secondary" (click)="poupar(habito.nome, habito.valor)">
+                  <ion-icon name="cash"></ion-icon>
+                  Poupar
+                </button>
+              </ion-item-options>
+            </ion-item-sliding>
+          </ion-item-group>
+        </ion-list>
 
-        <ion-row>
-          <ion-col col-12>
-              <input
-                [(ngModel)]="this.nomeHabito"
-                name="password"
-                placeholder="Ex: Beber café"
-                type="text"
-                class="inputNome" />
-          </ion-col>
-        </ion-row>
+        <ion-fab right bottom>
+            <button ion-fab color="orangeColor" (click)="goToAdd()"><ion-icon name="add"></ion-icon></button>
+        </ion-fab>
 
-        <ion-row>
-          <ion-col col-12>
-              <button type="submit" ion-button block color="orangeColor" large class="btn">AVANÇAR</button>
-          </ion-col>
-        </ion-row>
 
-      </form>
     </ion-grid>
 </ion-content>
